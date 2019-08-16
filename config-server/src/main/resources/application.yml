@@ -9,8 +9,10 @@ spring:
       server:
         native:
           search-locations:
-            file://PATH_TO_MICROSERVICES_PROJECT/ms-config-properties/{application}/{profile},
-            file://PATH_TO_MICROSERVICES_PROJECT/ms-config-properties/global/{profile}
+#            file://PATH_TO_MICROSERVICES_PROJECT/ms-config-properties/{application}/{profile},
+#            file://PATH_TO_MICROSERVICES_PROJECT/ms-config-properties/global/{profile}
+            /home/ks/IdeaProjects/Registration-Service/ms-config-properties/{application}/{profile},
+            /home/ks/IdeaProjects/Registration-Service/ms-config-properties/global/{profile}
 ---
 spring:
   profiles: git
