@@ -38,6 +38,7 @@ public class EmailServiceImpl implements EmailService {
 
             mailRepository.save(newMail);
             emailSender.send(message);
+
         } catch (MailException exception) {
             exception.printStackTrace();
         }
