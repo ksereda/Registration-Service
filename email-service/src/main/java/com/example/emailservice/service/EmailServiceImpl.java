@@ -28,8 +28,8 @@ public class EmailServiceImpl implements EmailService {
 
             Mail newMail = new Mail();
             newMail.setTo(input.getUsername());
-            newMail.setSubject("TestSubject");
-            newMail.setText("TestText");
+            newMail.setSubject("Registration on Kafka platform");
+            newMail.setText("Thank you for support. User with email " + input.getUsername() + " was register successfully!");
 
             SimpleMailMessage message = new SimpleMailMessage();
             message.setTo(newMail.getTo());
